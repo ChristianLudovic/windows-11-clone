@@ -98,6 +98,8 @@ body{
     background-color: #fff;
     border-radius: 2px;
     box-shadow: 0px 4px 0px 0px #005EB6;
+    margin-left: 52px;
+    margin-right: 49px;
 }
 
 .search-bar input::placeholder{
@@ -108,6 +110,7 @@ body{
 .search-bar input{
     border: none;
     background-color: transparent;
+    width: 300px;
 }
 
 .item{
@@ -129,6 +132,8 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 579px;
+    margin-left: 52px;
+    margin-right: 49px;
     
 }
 
@@ -136,6 +141,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: start;
+    gap: 2px;
 }
 
 .tile-left span{
@@ -143,6 +149,103 @@ body{
     color: #2F2F2F;
 }
 
+.tile{
+    display: inline-flex;
+    gap: 10.45px;
+    align-items: center;
+    width: 172px;
+}
+
 .title{
     font-weight: 700;
 }
+
+.recommended-content{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    row-gap: 36.59px;
+    column-gap: 100px;
+    width: 579px;
+    margin-left: 52px;
+    margin-right: 49px;
+}
+
+.profile{
+    display: inline-flex;
+    align-items: center;
+    gap: 13.94px;
+}
+
+.shutdown-profil-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 579px;
+    width: 100%;
+}
+
+.shutdown-profil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 680px;
+    padding: 15.68px 0;
+    background: rgba(174, 192, 236, 0.34);
+    border-radius: 0px 0px 6.97px 6.97px;
+    border-width: 0.87px;
+    border-style: solid;
+    border-image: linear-gradient(-75.26deg, rgba(203, 239, 255, 0.16) 0%, rgba(255, 255, 255, 0.00) 100%);
+    border-image-slice: 1;
+    height: 69.7px;
+    backdrop-filter: blur(38.33px);
+}
+
+.recommended, .pinned{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 579px;
+    width: 100%;
+    margin-left: 52px;
+    margin-right: 49px;
+}
+
+.recommended button, .pinned button{
+    background: rgba(255, 255, 255, 0.64);
+    border-radius: 6.1px;
+    border-image: transparent;
+    border-image-slice: 1;
+    padding: 6.97px 13.94px 6.97px 13.94px;
+    display: flex;
+    gap: 6.97px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    backdrop-filter: blur(36.08px);
+    border: none;
+
+}
+
+.start-menu{
+    padding-top: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 680px;
+    background: rgba(255, 255, 255, 0.86);
+    border-radius: 6.97px;
+    border-width: 0.87px;
+    border-style: solid;
+    border-image: linear-gradient(-75.26deg, rgba(203, 239, 255, 0.16) 0%, rgba(255, 255, 255, 0.00) 100%);
+    border-image-slice: 1;
+    position: absolute;
+    backdrop-filter: blur(87.12px);
+    left: 280px;
+    top: 10px;
+    }
+
+    input:focus{
+        outline: none;
+
+    }
