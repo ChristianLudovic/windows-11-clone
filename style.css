@@ -110,3 +110,39 @@ body{
     background-color: transparent;
 }
 
+.item{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.97px;
+}
+
+.item span{
+    font-size: 12.2px;
+    color: #2F2F2F;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    row-gap: 31.36px;
+    justify-content: space-between;
+    align-items: center;
+    width: 579px;
+    
+}
+
+.tile-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.tile-left span{
+    font-size: 12.2px;
+    color: #2F2F2F;
+}
+
+.title{
+    font-weight: 700;
+}
