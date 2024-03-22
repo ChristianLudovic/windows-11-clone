@@ -280,3 +280,131 @@ input:focus{
     backdrop-filter: blur(0px);
 }
 
+/* dark mode */
+
+.light-mode{
+    display: none;
+}
+
+.light-mode-active{
+    display: block;
+}
+
+.dark-mode-active{
+    display: none;
+
+}
+
+.dark{
+    background-image: url('./assets/wallpaper\ dark.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.wifiDark-mode{
+    display: none;
+}
+
+.wifiDark-mode-active{
+    display: block;
+}
+
+.wifiLight-mode-active{
+    display: none;
+}
+
+.time-date-active{
+    color: #fff;
+}
+
+.sound-dark{
+    display: none;
+}
+
+.sound-dark-active{
+    display: block;
+}
+
+.sound-light-active{
+    display: none;
+}
+
+.notification-dark{
+    display: none;
+}
+
+.notification-dark-active{
+    display: block;
+}   
+
+.notification-light-active{
+    display: none;
+}
+
+
+.task-bar-dark{
+    background: rgba(68, 68, 68, 0.30);
+    border-width: 0.9px;
+    border-style: solid;
+    border-image: linear-gradient(-75.26deg, rgba(203, 239, 255, 0.16) 0%, rgba(255, 255, 255, 0.00) 100%);
+    border-image-slice: 1;
+    height: 64px;
+    width: 100vw;
+    position: absolute;
+    backdrop-filter: blur(90.14px);
+    bottom: 0;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 1500px){
+    .task-bar{
+        display: none;
+    }
+
+    .task-bar-dark{
+        display: none;
+    }
+
+    .taskbar-icons{
+        display: none;
+    }
+
+    .taskbar2-icons{
+        display: none;
+    }
+
+    .search-bar{
+        display: none;
+    }
+
+    .row{
+        display: none;
+    }
+
+    .recommended-content{
+        display: none;
+    }
+
+    .profile{
+        display: none;
+    }
+
+    .shutdown-profil-content{
+        display: none;
+    }
+
+    .recommended, .pinned{
+        display: none;
+    }
+
+    body{
+        background-color: #fff;
+        background-image: none;
+    }
+
+    
+}
+
