@@ -2,10 +2,10 @@
 
 const windowsIcon = document.querySelector('.windows-icon');
 const startMenu = document.querySelector('.start-menu');
+ 
+let clickCount = 0;
 
 export function openStartMenu() {
-
-    let clickCount = 0;
 
     if (windowsIcon) {
         windowsIcon.addEventListener('click', () => {
@@ -23,4 +23,17 @@ export function openStartMenu() {
 
 
     
+}
+
+//close start menu on click outside 
+
+
+export function closeStartMenu() {
+    document.addEventListener('click', (e) => {
+        if (!startMenu.contains(e.target) && !windowsIcon.contains(e.target)) {
+            startMenu.classList.remove('active');
+            windowsIcon.classList.remove('windows-icon-active');
+            clickCount = 0;
+        }
+    });
 }

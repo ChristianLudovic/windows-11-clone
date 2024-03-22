@@ -1,7 +1,8 @@
-import { openStartMenu } from "./functions/functions.js";
+import { openStartMenu, closeStartMenu } from "./functions/functions.js";
 
 try {
     openStartMenu();
+    closeStartMenu();
 } catch (error) {
     console.error(error);
 }

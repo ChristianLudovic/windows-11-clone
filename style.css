@@ -259,7 +259,7 @@ input:focus{
     border-image-slice: 1;
     position: absolute;
     backdrop-filter: blur(87.12px);
-    left: 280px;
+    left: 20%;
     top: 10px;
 } 
 
